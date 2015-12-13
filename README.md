@@ -6,12 +6,6 @@ Now, i want to explore how to input data with <b>python<b>.<br />
 <br />
 
 #cas(france)
-+______________________+<br />
-|name+|+address+|phone+|<br />
-|_____|_________|_________|<br />
-|_____|_________|_________|<br />
-|_____|_________|_________|<br />
-|_____|_________|_________|<br />
-<br />
+<img src='cas.png'> </img> <br />
 letsgo!
 <br />
