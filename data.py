@@ -3,7 +3,6 @@ __author__= 'juandisay'
 
 import os
 
-
 class datainput:
     _name = []
     _address = []
@@ -29,6 +28,7 @@ class datainput:
         print self._name
         print self._address
         print self._phone
+
 def main():
     menus=['input data','sorting','search']
     print 
@@ -48,5 +48,6 @@ def main():
             print 'please Try input [choice]!'
     except NameError, SyntaxError:
         print 'please usage ordinal not capital!'
+
 if __name__ == '__main__':
     main()

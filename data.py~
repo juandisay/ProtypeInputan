@@ -3,7 +3,6 @@ __author__= 'juandisay'
 
 import os
 
-
 class datainput:
     _name = []
     _address = []
@@ -30,7 +29,7 @@ class datainput:
         print self._address
         print self._phone
 def main():
-    menus=['isi data','sorting','search']
+    menus=['input data','sorting','search']
     print 
     print '++++menus++++'
     for num,menu in enumerate(menus):
