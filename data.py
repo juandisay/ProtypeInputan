@@ -1,4 +1,8 @@
 #!/usr/bin/env python
+__author__= 'juandisay'
+
+import os
+
 
 class datainput:
     _name = []
@@ -14,18 +18,35 @@ class datainput:
         self._address.append(self.address)
         self._phone.append(self.phone)
         self.update_data()
+        
     def update_data(self):
         if self._name == self._address and self.phone:
             self._name.append(self.name)
             self._address.append(self.address)
             self._phone.append(self.phone)
-        self.unpack()
-    def unpack(self):
-        pass
-            
+        self.table()
+    def table(self):
+        print self._name
+        print self._address
+        print self._phone
+def main():
+    menus=['input data','sorting','search']
+    print 
+    print '++++menus++++'
+    for num,menu in enumerate(menus):
+        print num+1,menu
+    print '+++++++++++++'
+    try:
+        x=input('input choice menus (usage:number 1-3): ')
+        if x == 1:
+            a=raw_input('name          : ')
+            b=raw_input('address [city]: ')
+            c=raw_input('phone         : ')
+            os.system('clear')
+            datainput(a,b,c)
+        else:
+            print 'please Try input [choice]!'
+    except NameError, SyntaxError:
+        print 'please usage ordinal not capital!'
 if __name__ == '__main__':
-    while True:
-        input_name=raw_input('input name: ')
-        input_address=raw_input('input address: ')
-        input_phone=raw_input('input phone: ')
-        datainput(input_name,input_address,input_phone)
+    main()
