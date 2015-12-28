@@ -7,4 +7,9 @@ class result:
         self.phone = phone
         self.cetak()
     def cetak (self):
-        pass
+        print '------------------------>'
+        print '''
+        ********************************
+        
+        '''
+

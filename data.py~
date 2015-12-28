@@ -26,7 +26,7 @@ class datainput:
             self._phone.append(self.phone)
         self.table()
     def table(self):
-        pass#enger
+        pass
 
 def main():
     menus=['input data','sorting','search']
