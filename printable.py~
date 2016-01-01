@@ -5,6 +5,4 @@ class result:
         self.name = name
         self.address = address
         self.phone = phone
-        self.cetak()
-    def cetak (self):
-        pass
+    
